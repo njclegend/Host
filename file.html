@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NJC Legend | Personal Website</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(to right,#f4f7fa,#e9ecf1);
+    color:#333;
+    scroll-behavior:smooth;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:#fff;
+    padding:90px 20px;
+    text-align:center;
+}
+header h1{
+    font-size:48px;
+    font-weight:700;
+}
+header p{
+    margin-top:15px;
+    font-size:20px;
+}
+
+/* NAV */
+nav{
+    background:rgba(15,32,39,.95);
+    padding:12px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+nav a{
+    color:#fff;
+    margin:0 12px;
+    text-decoration:none;
+    font-weight:500;
+}
+nav a:hover{
+    color:#00e5ff;
+}
+
+/* SECTIONS */
+section{
+    padding:80px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:32px;
+}
+h2::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:#00e5ff;
+    display:block;
+    margin:10px auto 0;
+    border-radius:10px;
+}
+
+/* CARDS */
+.about,.skills,.projects,.contact{
+    background:#fff;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+/* ABOUT */
+.about p{
+    text-align:center;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* SKILLS */
+.skills ul{
+    list-style:none;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:16px;
+}
+.skills li{
+    background:linear-gradient(135deg,#00e5ff,#00bcd4);
+    color:#fff;
+    padding:14px;
+    border-radius:10px;
+    text-align:center;
+    font-weight:500;
+}
+
+/* PROJECTS */
+.project{
+    background:#f9f9f9;
+    padding:20px;
+    border-left:5px solid #00e5ff;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+
+/* CONTACT INFO */
+.contact-info{
+    text-align:center;
+    margin-bottom:30px;
+}
+.contact-info p{
+    margin:8px 0;
+    font-size:16px;
+}
+.contact-info a{
+    color:#00bcd4;
+    text-decoration:none;
+    font-weight:500;
+}
+.contact-info a:hover{
+    text-decoration:underline;
+}
+
+/* FORM */
+.contact form{
+    width:100%;
+    display:grid;
+    gap:15px;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    max-width:100%;
+    padding:14px;
+    font-size:16px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+.contact textarea{
+    resize:vertical;
+}
+
+.contact button{
+    width:100%;
+    background:linear-gradient(135deg,#00e5ff,#00bcd4);
+    color:#fff;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    background:#0f2027;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    header h1{font-size:34px;}
+    header p{font-size:16px;}
+    nav a{font-size:14px;margin:0 6px;}
+    section{padding:60px 15px;}
+    .about,.skills,.projects,.contact{padding:25px;}
+}
+</style>
+</head>
+
+<body>
+
+<header id="home">
+    <h1>NJC Legend</h1>
+    <p>Web Developer | Backend Enthusiast</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <div class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate web developer focused on building modern,
+            secure and scalable web applications.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>MySQL</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Personal Portfolio</h3>
+            <p>One-page responsive website built with HTML & CSS.</p>
+        </div>
+        <div class="project">
+            <h3>Admin Dashboard</h3>
+            <p>React + Express + MySQL authentication system.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact-info">
+            <p>📧 Email: 
+                <a href="mailto:njclegend@gmail.com">njclegend@gmail.com</a>
+            </p>
+
+            <p>📷 Instagram: 
+                <a href="https://www.instagram.com/__.l.e.g.e.n.d_/" target="_blank">
+                    @__.l.e.g.e.n.d_
+                </a>
+            </p>
+
+            <p>💻 GitHub: 
+                <a href="https://github.com/njclegend" target="_blank">
+                    github.com/njclegend
+                </a>
+            </p>
+
+         
+        </div>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 NJC Legend. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
